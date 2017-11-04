@@ -1,0 +1,5 @@
+[
+	{ "command": "current_line_time_aggregator", "caption": "Run TimeAggregator at current cursor position"},
+	{ "command": "keyword_time_aggregator", "caption": "Run TimeAggregator on all TIMESUM lines"},
+]
+

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[    << TIMESUM]]></content>
+    <tabTrigger>time</tabTrigger>
+    <scope>text</scope>
+    <description>Timeaggregator Timesum</description>
+</snippet>
