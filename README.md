@@ -1,8 +1,12 @@
 # TimeAggregator
 
+Sublime Text 3 Plugin
+
 A simple little calculator that sums up timeranges.
 
 Useful if you keep tasklists in sublime and want to quickly see aggregated times.
+
+![TimeAggregator in Action](https://raw.githubusercontent.com/NoUsername/TimeAggregator/master/example.gif)
 
 
 Example:
