@@ -1,6 +1,7 @@
 import sublime
 import sublime_plugin
 import datetime
+import traceback
 
 
 class BaseTimeAggregatorCommand(sublime_plugin.TextCommand):
@@ -16,10 +17,13 @@ class BaseTimeAggregatorCommand(sublime_plugin.TextCommand):
 
 	def tryParseTime(self, line):
 		try:
-			timediff = datetime.datetime.strptime(line, "%H:%M") - ExampleCommand.zeroTime
+			timediff = datetime.datetime.strptime(line, "%H:%M") - BaseTimeAggregatorCommand.zeroTime
 			return timediff
-		except:
+		except ValueError:
 			print('could not parse time in: %s'%line)
+		except:
+			print('unexpected error:')
+			traceback.print_exc()
 
 	def formatDelta(self, delta):
 		hours, remainder = divmod(delta.total_seconds(), 3600)
